@@ -24,7 +24,6 @@ const f4 = a => {
 }
 console.log(f4(7)) // '1'
 
-
 const f5 = a => {
   return a.filter(x => typeof x === 'number').reduce((a, b) => a + b).toString(2)
 }
