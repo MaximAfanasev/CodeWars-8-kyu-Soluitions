@@ -17,3 +17,8 @@ function oddCount(n) {
   return Math.floor(n / 2)
 }
 console.log(oddCount(15))
+
+function squareSum(a) {
+  return a.reduce((a, b) => a + b * b)
+}
+console.log(squareSum([1, 2, 2])) // 9

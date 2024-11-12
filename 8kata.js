@@ -22,7 +22,7 @@ arr6 = ['0', '1', '2', '3', '4', '5']
 const f4 = a => {
   return arr6[a % 6]
 }
-console.log(f4(7)) // '1'
+console.log(f4(7)) // ['0', '1', '2', '3', '4', '5'] '1'
 
 const f5 = a => {
   return a.filter(x => typeof x === 'number').reduce((a, b) => a + b).toString(2)
@@ -141,11 +141,6 @@ function digitize(a) {
 }
 console.log(digitize('35231')) // [1,3,2,5,3]
 
-function squareSum(a) {
-  return a.reduce((a, b) => a + b * b)
-}
-console.log(squareSum([1, 2, 2])) // 9
-
 var summation = function (num) {
   let result = 0;
   for (var i = 1; i <= num; i++) {
@@ -153,7 +148,7 @@ var summation = function (num) {
   }
   return result;
 }
-console.log(summation(8)) // 3 -> 1+2+3
+console.log(summation(3)) // 1+2+3 -> 6 
 
 function DNAtoRNA(dna) {
   return dna.split('').map(x => x === 'T' ? x = 'U' : x).join('')
